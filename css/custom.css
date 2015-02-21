@@ -1,62 +1,60 @@
 
 .nav-inicio {
     background: url(images/BARRA-ROJA-SUPERIOR.png);
-    bottom: 1260px;
     height: 49px;
-    left: 0px;
-    right: 0px;
-    top: 0px;
     width: 1425px;
 }
 
-.cuerpo {
+#cuerpo {
     background: url(images/RECUADRO-PRINCIPAL.jpg);
-    bottom: 0px;
     box-shadow: 0px 0px 35px 0.00px rgba(27, 21, 17, 0.52);
-    height: 1276px;
     left: 243px;
     right: 242px;
-    top: 0px;
     width: 940px;
 }
 
-.logo {
-    background: url(images/LOGO-CARGO-GAS.jpg);
-    bottom: 1009px;
-    height: 196px;
-    left: 275px;
-    right: 897px;
+#logo {
     top: 104px;
-    width: 253px;
-}
-
-.carrucel {
-    background: url(images/BOMBA-GAS1-copia-2.jpg);
-    bottom: 923px;
-    height: 309px;
-    left: 551px;
-    right: 268px;
-    top: 77px;
-    width: 606px;
-}
-
-.busqueda {
-    background: url(images/BARRA-AMARILLA-SUPERIOR.jpg);
-    bottom: 907px;
-    height: 56px;
-    left: 243px;
-    right: 243px;
-    top: 346px;
-    width: 939px;
     
 }
 
-.ligas {
-    background: url(images/Rect%C3%A1ngulo-4.jpg
-    bottom: 848px;
-    height: 36px;
-    left: 243px;
-    right: 999px;
-    top: 425px;
+#carrucel {
+    top: 10px;
+}
+
+#busqueda {
+    background: url(images/BARRA-AMARILLA-SUPERIOR.jpg);
+    height: 56px;
+    width: 100%;
+    right: 10px;
+    left: 15px;
+    
+}
+
+#ligas {
+    background: url(images/Rectangulo-4.jpg);
+    
     width: 183px;
+}
+
+#pagina {
+    width: 50.7%;
+    height: 42.2%;
+    background-color: #f4f4f2;
+    border-bottom-width: thin;
+    border-color: black;
+}
+
+#pie {
+    background-color: #dfc810;
+    height: 9.1%;
+}
+
+#mapa {
+    
+}
+
+#servicios {
+    background: url(images/BARRA-ROJA-INFERIOR.jpg);
+    height: 3.6%;
 }
