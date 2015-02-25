@@ -14,7 +14,6 @@
 }
 
 #logo {
-    top: 104px;
     
 }
 
@@ -55,6 +54,34 @@
 }
 
 #servicios {
-    background: url(images/BARRA-ROJA-INFERIOR.jpg);
-    height: 3.6%;
+}
+
+#inicio {
+    background-color: firebrick;
+}
+a:link{
+    color: #cccccc;
+}
+#marketing {
+    background-color: firebrick;
+}
+
+#footer {
+    background-color: rgb(222,200,16);
+}
+
+#buscador {
+    background-color: #dfc810;
+    height: 40px;
+}
+
+#ajuste {
+    top: 200px;
+}
+
+#gasolina {
+}
+
+#menu {
+    right: 15px;
 }
