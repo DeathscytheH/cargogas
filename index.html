@@ -1,76 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="cargoGas">
 
 <head>
     <meta charset="UTF-8">
-
     <title>Grupo Cargogas</title>
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
-    <div class="nav-inicio col-md-12">
-        
-    </div>
-    <div id="cuerpo" class="col-md-12">
-        <div id="logo" class="col-md-4">
-            <img src="images/LOGO-CARGO-GAS.png" alt="">
-        </div>
-        <div id="carrucel" class="col-md-8">
-            <img src="images/BOMBA-GAS1-copia-2.png" alt="">
-        </div>
-        <div id="busqueda" class="col-md-12"></div>
-        
-        <div id="nav" class="col-md-3">
-            <ul class="nav nav-pills nav-stacked">
-                <li id="ligas"><a class="nav-link" href="">UBICACIONES</a>
-                </li>
-                <li id="ligas"><a class="nav-link" href="">PROMOCIONES</a>
-                </li>
-                <li id="ligas"><a class="nav-link" href="">CREDITO</a>
-                </li>
-                <li id="ligas"><a class="nav-link" href="">TARJETAS PRE-PAGO</a>
-                </li>
-                <li id="ligas"><a class="nav-link" href="">BOLSA DE TRABAJO</a>
-                </li>
-                <li id="ligas"><a class="nav-link" href="">CONTACTO</a>
-                </li>
-                <li id="ligas"><a class="nav-link" href="">DUDAS</a>
-                </li>
-                <li id="ligas"><a class="nav-link" href="">ACTIVIDADES CARGOGAS</a>
-                </li>                
-            </ul>
-            <div id="mapa"></div>
-        </div>
-        <div id="pagina" class="col-md-9">
-            <h3>BIENVENIDOS</h3>
-            <p>
-                Grupo Cargo Gas les da la bienvenida a su....Petróleos Mexicanos (Pemex) es una empresa productiva del Estado petrolera, creada en 1938, que cuenta con un régimen constitucional para la explotación de los recursos energéticos (principalmente petróleo y gas natural) en territorio mexicano, aunque también cuenta con diversas operaciones en el extranjero. Esta empresa actúa bajo la supervisión de un consejo de administración, cuyo presidente es el Secretario de Energía, actualmente Pedro Joaquín Coldwell. El Director General de Pemex (el cual es el encargado de las operaciones diarias) es Emilio Lozoya Austin.
-            </p>
-            <p>
-                Pemex es además la compañía estatal encargada de administrar la exploración, explotación y ventas del petróleo, siendo la mayor empresa de México. Fue la mayor compañía Latinoamericana hasta mediados del 2009. Pemex tiene ventas superiores a los 106.000 millones USD al año, una cifra incluso superior al PIB anual de algunos de los países de América Latina.
-            </p>
-        </div>
-        <div id="servicios" class="col-md-12">
-            <div class="col-md-4">
-                <img src="images/LOGOS-SERVICIOS.png" alt="">
+    <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <div id="inicio" class="col-sm-12 col-md-12">
+            <div id="datos" class="col-sm-6 col-md-6">
+                <ul class="nav nav-pills">
+                    <li><a href="#">Inicio</a>
+                    </li>
+                    <li><a href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="contacto" class="col-sm-6 col-md-6">
+                <ul class="nav nav-pills pull-right">
+                    <li><a href="#">(871) 733 64 69</a>
+                    </li>
+                    <li><a href="mailto:info@cargogas.com">info@cargogas.com</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div id="pie" class="col-md-12">
-            <ul class="list-inline">
-                <li><img src="images/Capa-1.png" alt="">
-                </li>
-                <li><img src="images/Capa-2.png" alt="">
-                </li>
-                <li><img src="images/Capa-3.png" alt="">
-                </li>
-            </ul>
+        <div id="baner" class="col-sm-12 col-md-12">
+            <div id="logo" class="col-sm-4 col-md-4">
+                <img class="img-responsive center-block" src="images/LOGO-CARGO-GAS.png" alt="">
+            </div>
+            <div id="carrucel" class="col-sm-8 col-md-8 hidden-xs">
+                <img class="center-block img-responsive" src="images/BOMBA-GAS1-copia-2.png" alt="">
+            </div>
+            <div id="buscador" class="col-sm-12 col-md-12">
+            </div>
+        </div>
+        <div id="contenido" class="col-sm-12 col-md-12">
+            <div id="menu" menu2 class="col-md-3 hidden-sm hidden-xs">
+                <ul class="nav nav-pills nav-stacked">
+                    <li id="ligas" ng-class="{ active:tab.isSet(1) }"><a class="nav-link" href ng-click="tab.setTab(1)">UBICACIONES</a>
+                    </li>
+                    <li id="ligas" ng-class="{ active:tab.isSet(2) }"><a class="nav-link" href ng-click="tab.setTab(2)">PROMOCIONES / SORTEOS</a>
+                    </li>
+                    <li id="ligas" ng-class="{ active:tab.isSet(3) }"><a class="nav-link" href ng-click="tab.setTab(3)">CREDITO</a>
+                    </li>
+                    <li id="ligas" ng-class="{ active:tab.isSet(4) }"><a class="nav-link" href ng-click="tab.setTab(4)">PREPAGO</a>
+                    </li>
+                    <li id="ligas" ng-class="{ active:tab.isSet(5) }"><a class="nav-link" href ng-click="tab.setTab(5)">BOLSA DE TRABAJO</a>
+                    </li>
+                    <li id="ligas" ng-class="{ active:tab.isSet(6) }"><a class="nav-link" href ng-click="tab.setTab(6)">CONTACTO</a>
+                    </li>
+                    <li id="ligas" ng-class="{ active:tab.isSet(7) }"><a class="nav-link" href ng-click="tab.setTab(7)">PREGUNTAS FREQUENTES</a>
+                    </li>
+                </ul>
+                <div id="mapa" class=""></div>
+            </div>
+            <div id="info" class="col-xs-12 col-sm-12 col-md-9">
+                <bolsa-de-trabajo ng-show="tab.isSet(5)"></bolsa-de-trabajo>
+                <contacto ng-show="tab.isSet(6)"></contacto>
+                <credito ng-show="tab.isSet(3)"></credito>
+                <faq ng-show="tab.isSet(7)"></faq>
+                <prepago ng-show="tab.isSet(4)"></prepago>
+                <promociones ng-show="tab.isSet(2)"></promociones>
+                <ubicaciones ng-show="tab.isSet(1)"></ubicaciones>
+            </div>
+        </div>
+        <div id="marketing" class="col-sm-12 col-md-12">
+            <div id="servicios" class="col-sm-6 col-md-6">
+                <img class="img-responsive" src="images/LOGOS-SERVICIOS.png" alt="">
+            </div>
+            <div id="redes" class="col-sm-6 col-md-6">
+                <img class="img-responsive pull-right" src="images/logo-facebook.png" alt="">
+            </div>
+        </div>
+        <div id="footer" class="col-xs-12 col-sm-12 col-md-12">
+            <div id="gasolina" class="col-xs-12 col-sm-12 col-md-6">
+                <ul class="list-inline">
+                    <li><img src="images/Capa-1.png" alt="">
+                    </li>
+                    <li><img src="images/Capa-2.png" alt="">
+                    </li>
+                    <li><img src="images/Capa-3.png" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div id="copyright" class="col-xs-12 col-sm-12 col-md-6">
+                <div id="cr" class="pull-right">
+                    Copyright 2015 Grupo Cargo Gas. Derechos Reservados
+                </div>
+            </div>
         </div>
     </div>
+    <!-- Libs -->
+    <script scr="js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/menu.js"></script>
 </body>
-<script src="js/jquery-1.11.2.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/angular.min.js"></script>
 
 </html>
