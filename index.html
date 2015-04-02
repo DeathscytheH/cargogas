@@ -6,11 +6,20 @@
     <title>Grupo Cargogas</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/custom.css">    
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">    
+    <!-- Libs -->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script scr="js/bootstrap.js"></script>    
+    <script src="js/angular.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/menu.js"></script>
+    <script src="app/controllers.js"></script>       
 </head>
 
 <body>
-    <div class="col-sm-12 col-md-8 col-md-offset-2">
+    <div id="cuerpo" class="col-sm-12 col-md-8 col-md-offset-2">
         <div id="inicio" class="col-sm-12 col-md-12">
             <div id="datos" class="col-sm-6 col-md-6">
                 <ul class="nav nav-pills">
@@ -30,11 +39,11 @@
             </div>
         </div>
         <div id="baner" class="col-sm-12 col-md-12">
-            <div id="logo" class="col-sm-4 col-md-4">
-                <img class="img-responsive center-block" src="images/LOGO-CARGO-GAS.png" alt="">
+            <div id="logo" class="col-sm-4 col-md-4 center-block">
+                <img class="img-responsive" src="images/LOGO-CARGO-GAS1.png" alt="">
             </div>
-            <div id="carrucel" class="col-sm-8 col-md-8 hidden-xs">
-                <img class="center-block img-responsive" src="images/BOMBA-GAS1-copia-2.png" alt="">
+            <div class="col-sm-8 col-md-8 hidden-xs container">
+                <carrucel></carrucel>
             </div>
             <div id="buscador" class="col-sm-12 col-md-12">
             </div>
@@ -57,7 +66,9 @@
                     <li id="ligas" ng-class="{ active:tab.isSet(7) }"><a class="nav-link" href ng-click="tab.setTab(7)">PREGUNTAS FREQUENTES</a>
                     </li>
                 </ul>
-                <div id="mapa" class=""></div>
+                <div id="mapa" class="">
+                    <img src="images/MergedLayers.png" class="img-responsive" alt="">
+                </div>
             </div>
             <div id="info" class="col-xs-12 col-sm-12 col-md-9">
                 <bolsa-de-trabajo ng-show="tab.isSet(5)"></bolsa-de-trabajo>
@@ -95,12 +106,6 @@
             </div>
         </div>
     </div>
-    <!-- Libs -->
-    <script scr="js/bootstrap.min.js"></script>
-    <script src="js/jquery-1.11.2.min.js"></script>
-    <script src="js/angular.min.js"></script>
-    <script src="app/app.js"></script>
-    <script src="app/menu.js"></script>
 </body>
 
 </html>

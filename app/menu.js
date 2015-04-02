@@ -1,6 +1,12 @@
 (function(){
     var app = angular.module('menu-directives', []);
-
+    
+    app.directive("carrucel", function(){
+       return{
+          restrict: 'E',
+           templateUrl:"partials/carrucel.html"
+       } ;
+    });
     app.directive("bolsaDeTrabajo", function() {
       return {
         restrict: 'E',
@@ -86,5 +92,11 @@
         controllerAs: "tab"
       };
     });    
-
+        app.controller("gasolineraController", function ($scope, $http) {
+        $http.get("gas.json").success(function (data) {
+            $scope.gasolineras = data;
+        });
+        $scope.estados1 = ["Durango", "Coahuila"];
+        $scope.ciudades1 = ["Matamoros", "Torreon", "Viesca", "Gomez Palacio"]
+    })
   })();
