@@ -6,16 +6,13 @@
 }
 
 #cuerpo {
-    background: url(images/RECUADRO-PRINCIPAL.jpg);
     box-shadow: 0px 0px 35px 0.00px rgba(27, 21, 17, 0.52);
-    left: 243px;
-    right: 242px;
-    width: 940px;
+    background-color: #f4f4f2;
 }
 
 #logo {
-    top: 104px;
-    
+    top: 50px;
+    right: 10px;
 }
 
 #carrucel {
@@ -32,8 +29,7 @@
 }
 
 #ligas {
-    background: url(images/Rectangulo-4.jpg);
-    
+    background-color: rgb(213,213,213);
     width: 183px;
 }
 
@@ -55,6 +51,72 @@
 }
 
 #servicios {
-    background: url(images/BARRA-ROJA-INFERIOR.jpg);
-    height: 3.6%;
+    top: 7px;
+}
+
+#inicio {
+    background-color: #c0263d;
+}
+#marketing {
+    background-color: #c0263d;
+    height: 50px;
+}
+
+#footer {
+    background-color: rgb(222,200,16);
+}
+
+#buscador {
+    background-color: #dfc810;
+    height: 40px;
+}
+
+#ajuste {
+    top: 200px;
+}
+
+#gasolina {
+    top: 5px;
+}
+
+#menu {
+    right: 15px;
+}
+
+#cr {
+    top: 20px;
+}
+
+#redes {
+    top: 7px;
+}
+
+#myCarousel stilo {
+    
+}
+
+#myCarousel {
+    top: 20px;
+    z-index: 1;
+}
+
+#info {
+    background-color: gainsboro;
+    border: #151515;
+    border-style: solid;
+}
+
+body {
+    background-color: gainsboro;
+}
+
+body {
+    background-color: #f4f4f2;
+}
+
+#ciudad {
+}
+
+#gasolineras {
+    background-color: #f4f4f2;
 }

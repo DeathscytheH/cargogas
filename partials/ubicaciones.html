@@ -1,0 +1,18 @@
+<div id="gasolineras" ng-controller="gasolineraController" class="panel panel-default">
+    <h1 class="subheader">Gasolineras</h1>
+    <select id="estado" name="estado" ng-model="myEstado" ng-options="estado for estado in estados1" class="form-control">
+
+    </select>
+
+    <select id="ciudad" name="ciudad" ng-model="myCiudad" ng-options="ciudad for ciudad in ciudades1" class="form-control">
+    </select>
+    <ul class="panel callout radius">
+        <li ng-repeat="gas in gasolineras | filter: { estado: myEstado, ciudad: myCiudad}">
+            <p>{{gas.nombre}}</p>
+            <p>{{gas.direccion}}</p>
+            <p>{{gas.ciudad}}</p>
+            <p>{{gas.estado}}</p>
+        </li>
+    </ul>
+
+</div>
